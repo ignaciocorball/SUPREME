@@ -1,0 +1,16 @@
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\bin\Release\SUPREMEUPDATER.exe.config
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\bin\Release\SUPREMEUPDATER.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\bin\Release\SUPREMEUPDATER.pdb
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.csprojAssemblyReference.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.Form1.resources
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.FormConn.resources
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.Properties.Resources.resources
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.csproj.GenerateResource.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.csproj.CoreCompileInputs.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.pdb
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\Interop.Shell32.dll
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\SUPREMEUPDATER\obj\Release\SUPREMEUPDATER.csproj.ResolveComReference.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\SUPREMEUPDATER.exe.config
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\SUPREMEUPDATER.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\SUPREMEUPDATER.pdb

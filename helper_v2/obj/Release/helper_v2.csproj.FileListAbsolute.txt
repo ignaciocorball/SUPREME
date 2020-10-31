@@ -1,0 +1,17 @@
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\helper_v2.exe.config
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\helper_v2.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\helper_v2.pdb
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.csprojAssemblyReference.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.Form1.resources
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.Properties.Resources.resources
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.csproj.GenerateResource.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.csproj.CoreCompileInputs.cache
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.pdb
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\obj\Release\helper_v2.csproj.CopyComplete
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\DotNetZip.dll
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\DotNetZip.pdb
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\helper_v2\bin\Release\DotNetZip.xml
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\helper_v2.exe.config
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\helper_v2.exe
+C:\Users\GhostY\OneDrive\Documentos\Local Repository\SupremePicker\Supreme\helper_v2.pdb
