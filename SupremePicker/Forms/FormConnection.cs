@@ -26,7 +26,7 @@ namespace Supreme.Forms
 
         private void button2_MouseClick(object sender, MouseEventArgs e)
         {
-            Application.Exit();
+            Environment.Exit(0);
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)

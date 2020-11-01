@@ -33,12 +33,25 @@ namespace Supreme
         private void formBinds_Load(object sender, EventArgs e)
         {
             sponsorBanner2.Image = sponsorBannerPNG;
-            Opacity = Supreme.Properties.Settings.Default.Opacity;
+            Opacity = Properties.Settings.Default.Opacity;
             Language();
             timerMessage.Enabled = true;
             timerMessage.Start();
-            int r = WMessageRnd.Next(WMessageEN.Count);
-            lblTester.Text = (string)WMessageEN[r];
+            switch (Properties.Settings.Default.Language)
+            {
+                case 0:
+                    int r = WMessageRnd.Next(WMessageEN.Count);
+                    lblTester.Text = (string)WMessageEN[r];
+                    break;
+                case 1:
+                    r = WMessageRnd.Next(WMessageES.Count);
+                    lblTester.Text = (string)WMessageES[r];
+                    break;
+                case 2:
+                    r = WMessageRnd.Next(WMessagePR.Count);
+                    lblTester.Text = (string)WMessagePR[r];
+                    break;
+            }
             lblTester.AutoSize = true;
             lblTester.Location = new Point(920, 9);
         }
@@ -660,7 +673,6 @@ namespace Supreme
             btnHome.Visible = true;
             btnHome2.Visible = false;
         }
-
         private void btnMaps_Click(object sender, EventArgs e)
         {
             FormUnderContrPop FUCP = new FormUnderContrPop();
@@ -676,11 +688,10 @@ namespace Supreme
             btnMaps.Visible = true;
             btnMaps2.Visible = false;
         }
-
         private void btnBug_Click(object sender, EventArgs e)
         {
-            FormUnderContrPop FUCP = new FormUnderContrPop();
-            FUCP.ShowDialog();
+            FormConfig FConfig = new FormConfig();
+            FConfig.ShowDialog();
         }
         private void btnBug_MouseEnter(object sender, EventArgs e)
         {
@@ -692,7 +703,6 @@ namespace Supreme
             btnBug.Visible = true;
             btnBug2.Visible = false;
         }
-
         private void btnAbout_Click(object sender, EventArgs e)
         {
             btnAbout2_Click(sender, e);
@@ -746,6 +756,8 @@ namespace Supreme
             Properties.Settings.Default.formAboutIsOpen2 = 1;
             if (Size.Width == 1394)
             {
+                panel2.Visible = false;
+                panel2.Visible = true;
                 timerAbout.Stop();
                 timerAbout.Enabled = false;
                 timerAbout.Dispose();
@@ -757,12 +769,12 @@ namespace Supreme
             Properties.Settings.Default.formAboutIsOpen2 = 0;
             if (Size.Width == 994)
             {
+
                 timerAbout2.Stop();
                 timerAbout2.Enabled = false;
                 timerAbout2.Dispose();
             }
         }
-
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             Process.Start("https://steamcommunity.com/id/GhostyWP");
@@ -791,16 +803,44 @@ namespace Supreme
         {
             lblTester.SetBounds(x, y, 1, 1);
             x--;
-            if (x <= -700)
+            switch (Properties.Settings.Default.Language)
             {
-                int r = WMessageRnd.Next(WMessageEN.Count);
-                lblTester.Text = (string)WMessageEN[r];
-                x = 920;
+                case 0:
+                    if (x <= -700)
+                    {
+                        int r = WMessageRnd.Next(WMessageEN.Count);
+                        lblTester.Text = (string)WMessageEN[r];
+                        x = 920;
+                    }
+                    break;
+                case 1:
+                    if (x <= -700)
+                    {
+                        int r = WMessageRnd.Next(WMessageES.Count);
+                        lblTester.Text = (string)WMessageES[r];
+                        x = 920;
+                    }
+                    break;
+                case 2:
+                    if (x <= -700)
+                    {
+                        int r = WMessageRnd.Next(WMessagePR.Count);
+                        lblTester.Text = (string)WMessagePR[r];
+                        x = 920;
+                    }
+                    break;
             }
         }
-#endregion
+        private void tmrOpacity_Tick(object sender, EventArgs e)
+        {
+            if (Opacity != Properties.Settings.Default.Opacity)
+            {
+                Opacity = Properties.Settings.Default.Opacity;
+            }
+        }
+        #endregion
 
-#region VARIABLES & IMPORTS
+        #region VARIABLES & IMPORTS
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -824,6 +864,25 @@ namespace Supreme
               "SUPREME really appreciates you for using this tool <3",
               "CS:GO Competitive Platforms brings you a better experience that Valve Matchmaking"
         };
-
+        readonly List<string> WMessageES = new List<string>()
+        {
+              "SUPREME funciona gracias a Github, Microsoft .NET Frameworks y Servicios web en la nube",
+              "Go Rush B?",
+              "Revisa la ✯Estrella si quieres ser parte de futuras encuestas y regalos",
+              "Recuerda no comprar casco y chaleco kevlar si eres CT y los TT están en full buy ;)",
+              "Si quieres ser donante o patrocinador, haz click en el botón de la ✯Estrella ;)",
+              "El equipo de SUPREME realmente te agradece por usar esta herramienta <3",
+              "Las plataformas competitivas de CS: GO le ofrece una mejor experiencia que el Matchmaking de Valve"
+        };
+        readonly List<string> WMessagePR = new List<string>()
+        {
+              "SUPREME funciona graças ao Github, Microsoft .NET Frameworks e Web Cloud Services",
+              "Go Rush B?",
+              "Marque a ✯Star se você quiser fazer parte de futuras pesquisas e presentes",
+              "Lembre-se de não comprar capacete se você for CT e o TT estiver em full buy;)",
+              "Se você deseja ser um doador ou patrocinador, clique no botão ✯STAR ;)",
+              "A equipe do SUPREME realmente agradece por usar esta ferramenta <3",
+              "As plataformas competitivas do CS: GO proporcionam uma experiência melhor que a Matchmaking do Valve"
+        };
     }
 }

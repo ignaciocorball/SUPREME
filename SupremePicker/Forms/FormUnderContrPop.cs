@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Supreme.Forms
@@ -16,8 +10,36 @@ namespace Supreme.Forms
         public FormUnderContrPop()
         {
             InitializeComponent();
+            language();
         }
-        //DLL IMPORTS
+
+        private void language()
+        {
+            switch (Properties.Settings.Default.Language)
+            {
+                case 0:
+                    //ENG
+                    label1.Text = "This formulary is under construction!";
+                    label2.Text = "Be patient and you will be rewarded :)";
+                    label2.Location = new Point(132, 70);
+                    break;
+                case 1:
+                    //ES
+                    label1.Text = "Este formulario esta bajo construcción!";
+                    label2.Text = "Se paciente y serás recompensado :)";
+                    label2.Location = new Point(132, 70);
+                    break;
+                case 2:
+                    //PR
+                    label1.Text = "Este formulário está em construção!";
+                    label2.Text = "Seja paciente e você será recompensado :)";
+                    label2.Location = new Point(120, 70);
+                    break;
+            }
+        }
+
+
+        #region Events & Imports
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -26,7 +48,6 @@ namespace Supreme.Forms
         {
             Close();
         }
-
         private void button1_MouseEnter(object sender, EventArgs e)
         {
             button1.ForeColor = Color.White;
@@ -44,5 +65,6 @@ namespace Supreme.Forms
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        #endregion
     }
 }

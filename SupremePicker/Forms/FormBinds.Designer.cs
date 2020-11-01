@@ -115,6 +115,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.timerMessage = new System.Windows.Forms.Timer(this.components);
+            this.tmrOpacity = new System.Windows.Forms.Timer(this.components);
             this.panelHerramientas.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1206,6 +1207,11 @@
             this.timerMessage.Interval = 25;
             this.timerMessage.Tick += new System.EventHandler(this.timerMessage_Tick);
             // 
+            // tmrOpacity
+            // 
+            this.tmrOpacity.Enabled = true;
+            this.tmrOpacity.Tick += new System.EventHandler(this.tmrOpacity_Tick);
+            // 
             // formBinds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1370,5 +1376,6 @@
         private System.Windows.Forms.PictureBox picBar1;
         private System.Windows.Forms.Label lblTester;
         private System.Windows.Forms.Timer timerMessage;
+        private System.Windows.Forms.Timer tmrOpacity;
     }
 }

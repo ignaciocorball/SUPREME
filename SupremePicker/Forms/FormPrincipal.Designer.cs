@@ -48,7 +48,7 @@
             this.GreenA4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAutoOn = new System.Windows.Forms.PictureBox();
-            this.panelBLAZING = new System.Windows.Forms.Panel();
+            this.panelOverviews = new System.Windows.Forms.Panel();
             this.lblBlazing1 = new System.Windows.Forms.Label();
             this.lblCOverviews = new System.Windows.Forms.Label();
             this.lblSOverviews = new System.Windows.Forms.Label();
@@ -161,7 +161,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GreenA4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAutoOn)).BeginInit();
-            this.panelBLAZING.SuspendLayout();
+            this.panelOverviews.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panelGamersClub.SuspendLayout();
@@ -303,7 +303,7 @@
             this.panelContenedor.Controls.Add(this.GreenA4);
             this.panelContenedor.Controls.Add(this.pictureBox2);
             this.panelContenedor.Controls.Add(this.btnAutoOn);
-            this.panelContenedor.Controls.Add(this.panelBLAZING);
+            this.panelContenedor.Controls.Add(this.panelOverviews);
             this.panelContenedor.Controls.Add(this.panelGamersClub);
             this.panelContenedor.Controls.Add(this.panelFaceit);
             this.panelContenedor.Controls.Add(this.GreenA3);
@@ -569,24 +569,24 @@
             this.btnAutoOn.TabStop = false;
             this.btnAutoOn.Click += new System.EventHandler(this.btnAutoOn_Click);
             // 
-            // panelBLAZING
+            // panelOverviews
             // 
-            this.panelBLAZING.Controls.Add(this.lblBlazing1);
-            this.panelBLAZING.Controls.Add(this.lblCOverviews);
-            this.panelBLAZING.Controls.Add(this.lblSOverviews);
-            this.panelBLAZING.Controls.Add(this.lblPOverviews);
-            this.panelBLAZING.Controls.Add(this.lblPingOVCL);
-            this.panelBLAZING.Controls.Add(this.label24);
-            this.panelBLAZING.Controls.Add(this.label20);
-            this.panelBLAZING.Controls.Add(this.label16);
-            this.panelBLAZING.Controls.Add(this.label12);
-            this.panelBLAZING.Controls.Add(this.pictureBox4);
-            this.panelBLAZING.Controls.Add(this.pictureBox8);
-            this.panelBLAZING.Location = new System.Drawing.Point(55, 77);
-            this.panelBLAZING.Name = "panelBLAZING";
-            this.panelBLAZING.Size = new System.Drawing.Size(172, 310);
-            this.panelBLAZING.TabIndex = 1;
-            this.panelBLAZING.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBLAZING_Paint);
+            this.panelOverviews.Controls.Add(this.lblBlazing1);
+            this.panelOverviews.Controls.Add(this.lblCOverviews);
+            this.panelOverviews.Controls.Add(this.lblSOverviews);
+            this.panelOverviews.Controls.Add(this.lblPOverviews);
+            this.panelOverviews.Controls.Add(this.lblPingOVCL);
+            this.panelOverviews.Controls.Add(this.label24);
+            this.panelOverviews.Controls.Add(this.label20);
+            this.panelOverviews.Controls.Add(this.label16);
+            this.panelOverviews.Controls.Add(this.label12);
+            this.panelOverviews.Controls.Add(this.pictureBox4);
+            this.panelOverviews.Controls.Add(this.pictureBox8);
+            this.panelOverviews.Location = new System.Drawing.Point(55, 77);
+            this.panelOverviews.Name = "panelOverviews";
+            this.panelOverviews.Size = new System.Drawing.Size(172, 310);
+            this.panelOverviews.TabIndex = 1;
+            this.panelOverviews.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBLAZING_Paint);
             // 
             // lblBlazing1
             // 
@@ -1162,9 +1162,9 @@
             // picBackground
             // 
             this.picBackground.Image = ((System.Drawing.Image)(resources.GetObject("picBackground.Image")));
-            this.picBackground.Location = new System.Drawing.Point(0, -21);
+            this.picBackground.Location = new System.Drawing.Point(0, 0);
             this.picBackground.Name = "picBackground";
-            this.picBackground.Size = new System.Drawing.Size(994, 425);
+            this.picBackground.Size = new System.Drawing.Size(994, 404);
             this.picBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBackground.TabIndex = 9;
             this.picBackground.TabStop = false;
@@ -1773,8 +1773,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GreenA4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAutoOn)).EndInit();
-            this.panelBLAZING.ResumeLayout(false);
-            this.panelBLAZING.PerformLayout();
+            this.panelOverviews.ResumeLayout(false);
+            this.panelOverviews.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panelGamersClub.ResumeLayout(false);
@@ -1834,7 +1834,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelMatchmaking;
         private System.Windows.Forms.Panel panelFaceit;
-        private System.Windows.Forms.Panel panelBLAZING;
+        private System.Windows.Forms.Panel panelOverviews;
         private System.Windows.Forms.Panel panelGamersClub;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox btnMinimize;
