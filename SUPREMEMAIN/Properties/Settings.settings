@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Supreme.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Language" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="formAboutIsOpen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="formAboutIsOpen2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="formKeyboard" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="L_Assembly_Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Banner_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Server_STATUS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="C_Assembly_Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Supreme_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="graphics" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="serverDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">techcoy.xyz</Value>
+    </Setting>
+    <Setting Name="sponsorBannerGIF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://techcoy.xyz/Supreme/Downloads/SponsorBanner.gif</Value>
+    </Setting>
+    <Setting Name="sponsorBannerPNG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://techcoy.xyz/Supreme/Downloads/SponsorBanner.png</Value>
+    </Setting>
+    <Setting Name="settings_json_url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.techcoy.xyz/Supreme/Downloads/settings.json</Value>
+    </Setting>
+    <Setting Name="FaceitPlatform" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://faceit.statuspage.io</Value>
+    </Setting>
+    <Setting Name="Opacity" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SteamID64" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SteamUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="configIsLoaded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="formPrincipalIsLoaded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="formLoaderIsReady" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="configProfileLoaded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
