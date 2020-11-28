@@ -36,7 +36,7 @@ namespace formPrincipal
             if (File.Exists(SupremeZIP))
             {
                 File.Delete(SupremeZIP);
-            }
+            } 
             InitializeApp();
         }
         private void SupremePicker_Load(object sender, EventArgs e)
@@ -64,14 +64,14 @@ namespace formPrincipal
             }
             lblTester.AutoSize = true;
             lblTester.Location = new Point(920, 9);
-            btnAutoOff_Click(sender, e);
-        }
+            btnAutoOff_Click(sender, e); 
+        } 
 
         #region EVENTS & METHODS
         private void InitializeApp()
-        {
+        { 
             if (CheckForInternetConnnection())
-            {
+            { 
                 if (ServerStatusBy(Supreme.Properties.Settings.Default.serverDomain))
                 {
                     DownloadJson();
@@ -111,7 +111,7 @@ namespace formPrincipal
             }
         }
         private void CssINCsharp()
-        {
+        { 
             //Panel OVERVIEWS
             pictureBox4.Parent = pictureBox8;
             lblBlazing1.Parent = pictureBox8;
@@ -174,7 +174,7 @@ namespace formPrincipal
             GreenA4.Parent = picBackground;
         }
         public static bool ServerStatusBy(string url)
-        {
+        { 
             try
             {
                 Ping pingSender = new Ping();
@@ -194,7 +194,7 @@ namespace formPrincipal
             }
         }
         private void DownloadJson()
-        {
+        { 
             try
             {
                 using (WebClient wc = new WebClient())
@@ -218,7 +218,7 @@ namespace formPrincipal
             }
         }
         private void InitCustomLabelFont()
-        {
+        { 
             try
             {
                 byte[] fontData = Supreme.Properties.Resources.LEMONMILK_Bold;
@@ -238,7 +238,7 @@ namespace formPrincipal
             }
         }
         private bool RemoteFileExists(string url)
-        {
+        { 
             try
             {
                 HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
@@ -253,7 +253,7 @@ namespace formPrincipal
             }
         }
         private void SponsorBannerLoader()
-        {
+        { 
             if (RemoteFileExists(Supreme.Properties.Settings.Default.sponsorBannerGIF))
             {
                 sponsorBanner.Load(Supreme.Properties.Settings.Default.sponsorBannerGIF);
@@ -264,7 +264,7 @@ namespace formPrincipal
             }
         }
         private void LoadData()
-        {
+        { 
             GetSteamPlatformStatus();
             PerlaNegra.ScriptErrorsSuppressed = true;
             PerlaNegra.Navigate(Supreme.Properties.Settings.Default.FaceitPlatform);
@@ -272,7 +272,7 @@ namespace formPrincipal
             lblAssembly.Text = Supreme.Properties.Settings.Default.L_Assembly_Version;
         }
         public void GamersclubPing()
-        {
+        { 
             //Set up labels Gamersclub
             lblPingGCCL.Text = (MSGCCL + " ms");
             if (MSGCCL > 170) { lblPingGCCL.ForeColor = Color.Red; }
@@ -325,7 +325,7 @@ namespace formPrincipal
 
         }
         public void FaceitPing()
-        {
+        { 
             //Set up Faceit Labels
             lblPingFCBR1.Text = (MSFCBR1 + " ms");
             if (MSFCBR1 > 170) { lblPingFCBR1.ForeColor = Color.Red; }
@@ -341,7 +341,7 @@ namespace formPrincipal
             if (lblPingFCBR1.ForeColor == Color.Red) { pictureBox10.BackColor = Color.Red; }
         }
         public void OverViewsPing()
-        {
+        { 
             //Labels OverViews colors
             if (MSOVCL != 0)
             {
@@ -368,7 +368,7 @@ namespace formPrincipal
 
         }
         public void ValvePing()
-        {
+        { 
             //Set up labels Valve
             if (MSVVLM1 != 0)
             {
@@ -440,7 +440,7 @@ namespace formPrincipal
             if (lblValveBR.ForeColor == Color.Yellow && lblValvePE.ForeColor == Color.Green && lblValveCL.ForeColor == Color.LimeGreen) { pictureBox11.BackColor = Color.Green; }
         }
         public void GetSteamPlatformStatus()
-        {
+        { 
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             using (WebClient BlackPearl = new WebClient())
             {
@@ -496,7 +496,7 @@ namespace formPrincipal
             }
         }
         public void GetFaceitPlatformStatus(object sender, EventArgs e)
-        {
+        { 
             foreach (HtmlElement etiqueta in PerlaNegra.Document.All)
             {
                 if (etiqueta.GetAttribute("data-component-id").Contains("jxzw1p9yjrlc"))
@@ -524,7 +524,7 @@ namespace formPrincipal
             PerlaNegra.Dispose();
         }
         public static bool CheckForInternetConnnection()
-        {
+        { 
             try
             {
                 using (var client = new WebClient())
@@ -541,7 +541,7 @@ namespace formPrincipal
             }
         }
         private async Task PlatformsPingAsync()
-        {
+        { 
             Ping ping = new Ping();
             //PINGS BLAZING
             try
@@ -611,7 +611,7 @@ namespace formPrincipal
             FaceitPing();
         }
         private void timerP_Tick(object sender, EventArgs e)
-        {
+        { 
             lblTest.ForeColor = Color.FromArgb(r.Next(0, 255), r.Next(0, 255), r.Next(0, 255));
             //LOAD GIF ANIMATION ON PANELS
             if (Supreme.Properties.Settings.Default.graphics == 1)
@@ -710,7 +710,7 @@ namespace formPrincipal
             }
         }
         private void timer1_TickAsync(object sender, EventArgs e)
-        {
+        { 
             try
             {
                 PlatformsPingAsync();
@@ -722,6 +722,7 @@ namespace formPrincipal
         }
         private void timerAbout_Tick(object sender, EventArgs e)
         {
+
             //Open FormAbout
             Size = new Size(Width + 8, Height);
             Supreme.Properties.Settings.Default.formAboutIsOpen = 1;
@@ -734,7 +735,7 @@ namespace formPrincipal
             }
         }
         private void timerAbout2_Tick(object sender, EventArgs e)
-        {
+        { 
             //Close FormAbout
             Size = new Size(Width - 8, Height);
             Supreme.Properties.Settings.Default.formAboutIsOpen = 0;
@@ -745,7 +746,7 @@ namespace formPrincipal
             }
         }
         private void timerMessage_Tick(object sender, EventArgs e)
-        {
+        { 
             lblTester.SetBounds(x, y, 1, 1);
             x--;
             switch (Supreme.Properties.Settings.Default.Language)
@@ -777,7 +778,7 @@ namespace formPrincipal
             }
         }
         private void init_Tick(object sender, EventArgs e)
-        {
+        { 
             Opacity += .05;
             if (Opacity >= Supreme.Properties.Settings.Default.Opacity)
             {
@@ -788,7 +789,7 @@ namespace formPrincipal
             }
         }
         private void timerLoaderForm_Tick(object sender, EventArgs e)
-        {
+        { 
             if (pictureBox10.BackColor != Color.Gray)
             {
                 Supreme.Properties.Settings.Default.formLoaderIsReady = true;
@@ -801,7 +802,7 @@ namespace formPrincipal
             }
         }
         private void tmrOpacity_Tick(object sender, EventArgs e)
-        {
+        { 
             if (Supreme.Properties.Settings.Default.formLoaderIsReady == true)
             {
                 if (Opacity != Supreme.Properties.Settings.Default.Opacity)
