@@ -423,7 +423,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label12.Location = new System.Drawing.Point(39, 142);
+            this.label12.Location = new System.Drawing.Point(39, 116);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 16);
             this.label12.TabIndex = 119;
@@ -454,7 +454,7 @@
             this.normalToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.normalToolStripMenuItem.ForeColor = System.Drawing.Color.LimeGreen;
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
-            this.normalToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
@@ -464,7 +464,7 @@
             this.highToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.highToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
             this.highToolStripMenuItem.Name = "highToolStripMenuItem";
-            this.highToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.highToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
             this.highToolStripMenuItem.Text = "High";
             this.highToolStripMenuItem.Click += new System.EventHandler(this.highToolStripMenuItem_Click);
             // 
