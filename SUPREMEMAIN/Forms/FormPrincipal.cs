@@ -1141,7 +1141,8 @@ namespace formPrincipal
               "Lembre-se de não comprar capacete se você for CT e o TT estiver em full buy;)",
               "Se você deseja ser um doador ou patrocinador, clique no botão ✯STAR ;)",
               "A equipe do SUPREME realmente agradece por usar esta ferramenta <3",
-              "As plataformas competitivas do CS: GO proporcionam uma experiência melhor que a Matchmaking do Valve"
+              "As plataformas competitivas do CS: GO proporcionam uma experiência melhor que a Matchmaking do Valve",
+              ""
         };
 
 
