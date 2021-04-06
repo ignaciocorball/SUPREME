@@ -4,7 +4,7 @@ SUPREME is a helpful tool for sudamerican CS:GO Players.
 
 ## Installation
 
-You only need open SUPREME.sln file with Visual Studio 2019 or other C# editors and compile it.
+You only need open SUPREME.sln file with Visual Studio 2019 or other C# IDE and compile it.
 
 ## Usage
 
