@@ -2,7 +2,7 @@
 
 SUPREME is a helpful tool for sudamerican CS:GO Players.
 
-[![](https://im3.ezgif.com/tmp/ezgif-3-cbfa0bab7c.gif)]()
+[![](https://im3.ezgif.com/tmp/ezgif-3-4263d8a7b1.gif)]()
 
 ## Installation
 
